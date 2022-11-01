@@ -1,0 +1,13 @@
+package com.agh.northwindproject;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class NorthwindprojectApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
