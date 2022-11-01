@@ -1,0 +1,32 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    environment:
+      MONGO_INITDB_DATABASE: db_northwind
+      MONGO_INITDB_ROOT_USERNAME: springuser
+      MONGO_INITDB_ROOT_PASSWORD: Password
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb-dbnorthwind-volume:/data/db
+    networks:
+      - northwind-service-network
+
+  northwind-service:
+    image: northwind-service
+    container_name: 'northwind-service'
+    build: northwind-service/.
+    environment:
+      MONGODB_HOST: mongo
+    ports:
+      - 8080:8080
+    networks:
+      - northwind-service-network
+
+volumes:
+  mongodb-dbnorthwind-volume:
+
+networks:
+  northwind-service-network:
