@@ -17,7 +17,7 @@
 The project purpose is to implement system executing basic operations on Northwind database. It is used MongoDB as an example of Document-oriented database.
 
 ### Database diagram
-<img width="630" alt="129492965-a82a59f0-1ac1-4239-a86e-fd1f3c32f29c" src="https://user-images.githubusercontent.com/34041060/135817429-81c646f6-8139-455d-9f5c-a051b4197c2e.png">
+<img width="630" alt="diagram" src="https://user-images.githubusercontent.com/82596765/199330938-6bd9df59-2360-4f92-b213-f88c78fd2224.png">
 
 ## Document-oriented database and relations
 There are two approaches to simulate relations in document-oriented datbase:
